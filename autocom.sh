@@ -16,6 +16,7 @@ case $1 in
 		echo Your data was saved
 	;;
 	"start")
+		echo $1
 		git init
 		git add .
 		git commit -m "first commit"
