@@ -39,7 +39,6 @@ case $1 in
 		git init
 		git add .
 		git commit -m "$1"
-		echo juampam &
 		git push -u
 	;;
 esac
