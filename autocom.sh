@@ -40,6 +40,6 @@ case $1 in
 		git add .
 		git commit -m "$1"
 		echo juampam &
-		git push -u &
+		git push -u
 	;;
 esac
