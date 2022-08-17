@@ -1,5 +1,5 @@
 #!/bin/bash
-
+echo $1
 case $1 in
 	*)
 		git init
@@ -17,9 +17,9 @@ case $1 in
 	;;
 	"start")
 		echo $1
-		git init
-		git add .
-		git commit -m "first commit"
+#		git init
+#		git add .
+#		git commit -m "first commit"
 		echo Select Branch:
 		printf "\n1) main\n2) master\nleave blank for default (main)\n"
 		read MEBR
