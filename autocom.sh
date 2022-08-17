@@ -1,12 +1,6 @@
 #!/bin/bash
-echo $1
 case $1 in
-	*)
-		git init
-		git add .
-		git commit -m "$1"
-		git push -u
-	;;
+	
 	
 	"login")
 		read -p "Username: " user
@@ -16,10 +10,9 @@ case $1 in
 		echo Your data was saved
 	;;
 	"start")
-		echo $1
-#		git init
-#		git add .
-#		git commit -m "first commit"
+		git init
+		git add .
+		git commit -m "first commit"
 		echo Select Branch:
 		printf "\n1) main\n2) master\nleave blank for default (main)\n"
 		read MEBR
@@ -41,5 +34,11 @@ case $1 in
 		read -p "Repo URL:" REPO
 		git remote add origin $REPO
 		git push -u origin $BRANCH
+	;;
+	*)
+		git init
+		git add .
+		git commit -m "$1"
+		git push -u
 	;;
 esac
