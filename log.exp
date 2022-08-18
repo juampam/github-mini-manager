@@ -1,9 +1,9 @@
 #!/usr/bin/expect
 spawn ./autocom.sh
 expect  "Username for 'https://github.com':" {
-send "USERNAME\r"
+send "juampam\r"
 }
 expect  {Password for 'https://juampam@github.com': } {
-send "TOKEN\n"
+send "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\n"
 }
 interact
