@@ -2,6 +2,10 @@
 spawn ./autocom.sh
 
 expect  "Username for 'https://github.com':" {
-	send "mierda\r"
+	send "juampam\r"
 }
+expect  "Password for 'https://juampa@github.com':" {
+	send "dasdasdasd\r"
+}
+
 interact
