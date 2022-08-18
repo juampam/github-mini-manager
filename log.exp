@@ -1,6 +1,7 @@
-#!/usr/bin/expect -f
+#!/usr/bin/expect 
 spawn ./autocom.sh
 
 expect  "Username for 'https://github.com':" {
 	send "mierda\r"
 }
+interact
