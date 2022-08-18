@@ -5,7 +5,7 @@ expect  "Username for 'https://github.com':" {
 	send "juampam\r"
 }
 expect  {"Password for 'https://juampa@github.com':"} {
-	send "dasdasdasd\r"
+	send "dasdasdasd\n"
 }
 
 interact
