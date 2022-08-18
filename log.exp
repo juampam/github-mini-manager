@@ -4,7 +4,7 @@ spawn ./autocom.sh
 expect  "Username for 'https://github.com':" {
 	send "juampam\r"
 }
-expect  {"Password for 'https://juampam@github.com': "} {
+expect  {Password for 'https://juampam@github.com': } {
 	send "dasdasdasd\n"
 }
 
