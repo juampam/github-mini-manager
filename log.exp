@@ -1,4 +1,5 @@
 #!/usr/bin/expect -f
+set timeout -1
 spawn ./autocom.sh
 expect "Username for 'https://github.com':"
 send -- "juampam\r"
