@@ -1,8 +1,11 @@
-#!/usr/bin/expect
+#!/usr/bin/expect 
 spawn ./autocom.sh
+
 expect  "Username for 'https://github.com':" {
-send juampam\r
+	send "$user\r"
 }
 expect  {Password for 'https://juampam@github.com': } {
-send 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\n
+	send "dasdasdasd\n"
 }
+
+interact
