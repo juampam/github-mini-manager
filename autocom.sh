@@ -1,4 +1,6 @@
 #!/bin/bash
+user=$(sed -n 1p ~/.gituserdata)
+pass=$(sed -n 2p ~/.gituserdata)
 case $1 in
 	"login")
 		read -p "Username: " user
