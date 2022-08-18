@@ -8,7 +8,7 @@ printf "expect  \"Username for 'https://github.com':\" {\n" >> log.exp
 echo send "$user\r" >> log.exp
 echo } >> log.exp
 printf "expect  {Password for 'https://juampam@github.com': } {\n" >> log.exp
-echo send "$pass\n" >> log.exp
+printf "send \"$pass\n\" " >> log.exp
 echo } >> log.exp
 echo interact
 
