@@ -3,8 +3,9 @@ case $1 in
 	"login")
 		read -p "Username: " user
 		read -p "Token: " pass
-		echo $user >> .userdata
-		echo $pass >> .userdata
+		touch ~/.gituserdata
+		echo $user >> ~/.gituserdata
+		echo $pass >> ~/.gituserdata
 		echo Your data was saved
 	;;
 	"start")

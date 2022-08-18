@@ -1,8 +1,11 @@
 #!/usr/bin/expect 
+set user "sed -n 1p ~/.gituserdata"
+set pass "sed -n 2p ~/.gituserdata"
+
 spawn ./autocom.sh
 
 expect  "Username for 'https://github.com':" {
-	send "juampam\r"
+	send "$user\r"
 }
 expect  {Password for 'https://juampam@github.com': } {
 	send "dasdasdasd\n"
