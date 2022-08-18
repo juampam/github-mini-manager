@@ -2,4 +2,3 @@
 spawn ./autocom.sh
 expect "Username for 'https://github.com':\r"
 send -- "juampam\r"
-expect eof

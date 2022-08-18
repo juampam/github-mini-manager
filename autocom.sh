@@ -1,7 +1,5 @@
 #!/bin/bash
 case $1 in
-	
-	
 	"login")
 		read -p "Username: " user
 		read -p "Token: " pass
@@ -35,7 +33,7 @@ case $1 in
 		git remote add origin $REPO
 		git push -u origin $BRANCH
 	;;
-	*)
+	*)	
 		git init
 		git add .
 		git commit -m "Default commit while developing"
