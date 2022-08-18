@@ -1,4 +1,6 @@
 #!/usr/bin/expect -f
 spawn ./autocom.sh
-expect "Username for 'https://github.com':\r"
-send -- "juampam\r"
+
+expect  "Username for https://github.com':" {
+	send "juampam\r"
+}
